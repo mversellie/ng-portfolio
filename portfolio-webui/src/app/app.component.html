@@ -1,0 +1,145 @@
+<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="#page-top">Marco Versellie</a>
+    <button class="navbar-toggler text-uppercase font-weight-bold  text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Masthead-->
+<header class="masthead bg-primary text-center">
+  <div class="container d-flex align-items-center flex-column">
+    <h1 class="masthead-heading text-uppercase mb-0">Marco Versellie</h1>
+    <h2><app-github #github [username]="githubName" /></h2>
+    <!-- Icon Divider-->
+    <div class="divider-custom">
+      <div class="divider-custom-line"></div>
+    </div>
+    <p class="masthead-subheading font-weight-light mb-0">Software Developer - Web Developer - Web Designer</p>
+  </div>
+</header>
+<section class="page-section portfolio" id="portfolio">
+  <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+  <div class="divider-custom">
+    <div class="divider-custom-line white-line divider-light"></div>
+  </div>
+  <!-- Portfolio Grid Items-->
+  <div class="row justify-content-center">
+    <div class="col-md-6 col-lg-6 mb-5">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/portfolio/voidengine1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Void Engine</h5>
+              <p>Search Engine using Vue.JS, Spring and Apache Solr/Nutch</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/portfolio/distinctive-port-home.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Distinctive Collision</h5>
+              <p>Commercial content portal using WordPress and PHP</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/portfolio/mallardsoft-better.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Mallard Softworks</h5>
+              <p>Business website made using PHP and Bootstrap</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="page-section bg-primary mb-0" id="about">
+  <div class="container">
+    <h2 class="page-section-heading text-center text-uppercase">About</h2>
+    <div class="divider-custom">
+      <div class="divider-custom-line"></div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 ms-auto"><p class="lead">Over <?php echo (intval(date("Y") - 2016)) . " "; ?>years of experience as a software developer working in the full stack and devops space.  Experience in the financial, industrial and commercial fields.  Well versed on Test Driven Development and Agile Principles  </p></div>
+        <div class="col-lg-4 me-auto"><p class="lead">Experience with:</p>Backend<ul><li>Spring</li></ul> Frontend<ul><li>Bootstrap</li><li>Angular</li><li>JavaScript</li><li>CMS(Wordpress)</li></ul></div>
+    </div>
+  </div>
+</section>
+<section class="page-section" id="contact">
+  <div class="container">
+    <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+    <div class="divider-custom">
+      <div class="divider-custom-line white-line"></div>
+    </div>
+    <!-- Contact Section Form-->
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-xl-7">
+        <div id="contactForm">
+          <!-- Name input-->
+          <div class="form-floating mb-3">
+            <input name="name" class="form-control" id="name" type="text" placeholder="Enter your name..."  />
+            <label for="name">Full name</label>
+            <div class="invalid-feedback" >A name is required.</div>
+          </div>
+          <!-- Email address input-->
+          <div class="form-floating mb-3">
+            <input name="email" class="form-control" id="email" type="email" placeholder="name@example.com" />
+            <label for="email">Email address</label>
+            <div class="invalid-feedback" >An email is required.</div>
+            <div class="invalid-feedback" >Email is not valid.</div>
+          </div>
+          <!-- Phone number input-->
+          <div class="form-floating mb-3">
+            <input name="phone" class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"  />
+            <label for="phone">Phone number</label>
+            <div class="invalid-feedback" >A phone number is required.</div>
+          </div>
+          <!-- Message input-->
+          <div class="form-floating mb-3">
+            <textarea name="message" class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" ></textarea>
+            <label for="message">Message</label>
+            <div class="invalid-feedback" >A message is required.</div>
+          </div>
+          <!-- Submit success message-->
+          <div class="d-none" id="submitSuccessMessage">
+            <div class="text-center mb-3">
+              <div class="fw-bolder text-success">Form submission successful!</div>
+            </div>
+          </div>
+          <!-- Submit error message-->
+          <div class="d-none" id="submitErrorMessage">
+            <div class="text-center text-danger mb-3">Error sending message!</div></div>
+          <!-- Submit Button-->
+          <button class="btn btn-primary btn-xl" id="submitButton">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Copyright Section-->
+<div class="copyright py-4 text-center text-white">
+  <div class="container"><small>Copyright &copy; Marco Versellie <?php echo date("Y"); ?></small></div>
+</div>
