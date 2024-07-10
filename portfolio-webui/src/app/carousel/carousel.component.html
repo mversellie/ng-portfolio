@@ -1,0 +1,27 @@
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button *ngFor="let anExample of environment.examples;let index=index;let first=first" type="button"
+                data-bs-target="#carouselExampleCaptions"
+                [attr.data-bs-slide-to]="index"
+                [ngClass]="first?'active':''"
+                [attr.aria-current] = "first?'true':null"
+                [attr.aria-label]="getAriaLabel(index)"></button>
+    </div>
+    <div class="carousel-inner">
+            <app-carousel-item *ngFor="let anExample of environment.examples;let first=first" #exampleEntries
+                               [ngClass]="!first?'carousel-item':'carousel-item active'"
+                               [title]="anExample['title']"
+                               [alt]="anExample['alt']"
+                               [imgLink]="anExample['imgLink']"
+                               [description]="anExample['description']"/>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+

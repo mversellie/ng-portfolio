@@ -21,13 +21,7 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
-            ],
-            "styles": [
-              "src/styles.css"
+              "src/assets"
             ],
             "scripts": []
           },
@@ -50,7 +44,9 @@
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true
+              "sourceMap": true,
+              "fileReplacements": [
+              ]
             }
           },
           "defaultConfiguration": "production"
@@ -79,15 +75,8 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/assets"
             ],
-            "styles": [
-              "src/styles.css"
-            ],
-            "scripts": [],
             "karmaConfig": "karma.conf.js"
           }
         }

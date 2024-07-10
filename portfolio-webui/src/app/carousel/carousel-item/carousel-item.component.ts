@@ -1,17 +1,15 @@
 import {Component, Input} from '@angular/core';
-import {NgOptimizedImage} from "@angular/common";
+import {NgForOf, NgOptimizedImage} from "@angular/common";
 
 @Component({
   selector: 'app-carousel-item',
   standalone: true,
   imports: [
-    NgOptimizedImage
+    NgOptimizedImage,NgForOf
   ],
   templateUrl: './carousel-item.component.html',
-  styleUrl: './carousel-item.component.css'
 })
-export class CarouselItemComponent {
-  @Input() link:string
+export class CarouselItemComponent{
   @Input() description:string
   @Input() title:string
   @Input() imgLink:string
