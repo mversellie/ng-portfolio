@@ -25,7 +25,8 @@ export class ContactFormComponent {
   contactForm = new FormGroup({
     fullName: new FormControl('',[Validators.required]),
     email: new FormControl('',[Validators.required, Validators.email]),
-    message: new FormControl('',[Validators.required])
+    message: new FormControl('',[Validators.required]),
+    subject: new FormControl('',[Validators.required])
   })
 
   badEmail(){
@@ -71,6 +72,10 @@ export class ContactFormComponent {
   get email(){
     return this.contactForm.get("email");
 
+  }
+
+  get subject(){
+    return this.contactForm.get("subject");
   }
 
 

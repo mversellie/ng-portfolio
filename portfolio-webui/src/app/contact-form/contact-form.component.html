@@ -7,7 +7,6 @@
         <div [style.display]="!(submitted && fullName?.hasError('required'))?'none':'block'"
              class="invalid-feedback" >A name is required.</div>
     </div>
-    <!-- Email address input-->
     <div class="form-floating mb-3">
         <input formControlName="email"  class="form-control" id="email" type="email" placeholder="name@example.com"/>
         <label for="email">Email address</label>
@@ -16,7 +15,12 @@
         <div [style.display]="!(submitted && badEmail())?'none':'block'"
              class="invalid-feedback" >Email is not valid.</div>
     </div>
-    <!-- Message input-->
+    <div class="form-floating mb-3">
+        <input formControlName="subject" class="form-control" id="subject" type="text" placeholder="Subject..."/>
+        <label for="subject">Subject</label>
+        <div [style.display]="!(submitted && subject?.hasError('required'))?'none':'block'"
+             class="invalid-feedback" >A subject is required.</div>
+    </div>
     <div class="form-floating mb-3">
         <textarea formControlName="message" class="form-control" id="message" type="text"
                   placeholder="Enter your message here..." style="height: 10rem"></textarea>
@@ -25,13 +29,10 @@
              class="invalid-feedback" >A message is required.</div>
     </div>
     </form>
-    <!-- Submit success message-->
     <div *ngIf="formStatus==='SUCCESS'" id="submitSuccessMessage">
         <div class="text-center mb-3 fw-bolder text-success">Form submission successful!</div></div>
-    <!-- Submit error message-->
     <div *ngIf="formStatus==='FAILURE'" id="submitErrorMessage">
         <div class="text-center fw-bolder text-danger mb-3">{{ errorMessage }}</div></div>
-    <!-- Submit Button-->
-    <button class="btn btn-primary btn-xl" (click)="shipForm()" id="submitButton" >Send</button>
+    <button type="button" class="btn btn-outline-light btn-xl" (click)="shipForm()" id="submitButton" >Send</button>
 </div>
 

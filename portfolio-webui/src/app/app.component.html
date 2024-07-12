@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+<nav class="navbar navbar-expand-lg text-uppercase fixed-top" id="mainNav">
   <div class="container">
     <a class="navbar-brand" href="#page-top">{{ navbarName }}</a>
     <button class="navbar-toggler text-uppercase font-weight-bold  text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,7 +15,7 @@
   </div>
 </nav>
 <!-- Masthead-->
-<header class="masthead bg-primary text-center">
+<header class="masthead secondary-stripe-bg-color text-center">
   <div class="container d-flex align-items-center flex-column">
     <h1 class="masthead-heading text-uppercase mb-0">{{headerName}}</h1>
     <h2><app-github #github [username]="githubName" /></h2>
@@ -26,10 +26,10 @@
     <p class="masthead-subheading font-weight-light mb-0">{{ headerDescription }}</p>
   </div>
 </header>
-<section class="page-section portfolio" id="portfolio">
+<section class="page-section portfolio primary-stripe-bg-color" id="portfolio">
   <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
   <div class="divider-custom">
-    <div class="divider-custom-line white-line divider-light"></div>
+    <div class="divider-custom-line divider-light"></div>
   </div>
   <!-- Portfolio Grid Items-->
   <div class="row justify-content-center">
@@ -39,7 +39,7 @@
 
   </div>
 </section>
-<section class="page-section bg-primary mb-0" id="about">
+<section class="page-section secondary-stripe-bg-color mb-0" id="about">
   <div class="container">
     <h2 class="page-section-heading text-center text-uppercase">About</h2>
     <div class="divider-custom">
@@ -48,11 +48,11 @@
     <app-about/>
   </div>
 </section>
-<section class="page-section" id="contact">
+<section class="page-section primary-stripe-bg-color " id="contact">
   <div class="container">
     <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
     <div class="divider-custom">
-      <div class="divider-custom-line white-line"></div>
+      <div class="divider-custom-line"></div>
     </div>
     <!-- Contact Section Form-->
     <div class="row justify-content-center">
@@ -63,6 +63,6 @@
   </div>
 </section>
 <!-- Footer -->
-<div class="copyright py-4 text-center text-white">
+<div class="copyright py-4 text-center text-white secondary-stripe-bg-color">
   <div class="container"><small>Copyright &copy; {{ author }} {{year}}</small></div>
 </div>
