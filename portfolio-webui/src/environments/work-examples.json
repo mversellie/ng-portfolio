@@ -1,18 +1,18 @@
 {
   "examples": [{
-    "imgLink": "/assets/img/portfolio/cal-arts-grad.png",
-    "title": "2010s cartoon #78",
-    "description": "Action packed animation.  Animated on 4s for smooth character movement.",
-    "alt": "you are not missing much."
+    "imgLink": "/assets/img/portfolio/voidengine1.png",
+    "title": "Void Engine",
+    "description": "Search Engine using Vue.JS, Spring and Apache Solr/Nutch.",
+    "alt": "Void engine image."
   },{
-    "imgLink": "/assets/img/portfolio/18+_adult_only.png",
-    "title": "Handholding Couple YCH",
-    "description": "The most dangerous and depraved romantic act explicitly drawn.  Sub to my Patreon for more.",
-    "alt": "you are lucky this didn't show up at work."
+    "imgLink": "/assets/img/portfolio/mallardsoft-better.png",
+    "title": "Mallard Softworks",
+    "description": "Business website made using PHP and Bootstrap",
+    "alt": "mallard soft."
   },{
-    "imgLink": "/assets/img/portfolio/the-power-of-gimp.png",
-    "title": "Only good for money laundering",
-    "description": "Stable Diffusion aint got nothing on this.",
-    "alt": "Damn looks like ML got him too."
+    "imgLink": "/assets/img/portfolio/distinctive-port-home.png",
+    "title": "Distinctive Collision",
+    "description": "Commercial content portal using WordPress and PHP",
+    "alt": "Cars img"
   }]
 }

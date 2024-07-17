@@ -1,14 +1,15 @@
 import examples from "./work-examples.json";
 
-const myname= "An Artist"
+const myname= "Marco Versellie"
 
 export const environment = {
     examples:examples["examples"],
-    gitUsername:"#myUsername",
+    gitUsername:"mversellie",
     navText:myname,
-    headerDescription:"Pretty Cool Guy",
+    headerDescription:"Software Developer - Web Developer - Web Designer",
+    title:"Marco Versellie - Web design and Software Solutions",
     headerName:myname,
     author: myname,
     navbarName: myname,
-    formSubmitUrl:"http://local:5000/api/form"
+    formSubmitUrl:"http://127.0.0.1:5000/api/form"
 };
