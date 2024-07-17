@@ -9,7 +9,7 @@ from email.utils import parseaddr
 
 load_dotenv()
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder=os.getenv("ANGULAR_LOCATION"))
 
 @app.after_request
 def after_request(response):
@@ -22,7 +22,7 @@ def after_request(response):
 def not_found_error(error):
     return handle_basic_error(404,error)
 
-@app.route('/api/form',methods=['POST'])
+@app.route('/form',methods=['POST'])
 def send_email():
     form_data = request.json
     email_address_data = parseaddr(form_data.get("email"))
@@ -35,6 +35,14 @@ def send_email():
         return blank_ok()
     else:
         return handle_basic_error(400,"bad email address")
+
+@app.route('/<path:path>',methods=['GET'])
+def get_path(path):
+    return app.send_static_file(path)
+
+@app.route('/',methods=['GET'])
+def get_home():
+    return app.send_static_file("index.html")
 
 def handle_basic_error(code:int,error):
     print(error)
