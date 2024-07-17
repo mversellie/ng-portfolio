@@ -10,8 +10,7 @@ import {ContactFormService} from "./contact-form.service";
     ReactiveFormsModule,
     NgIf
   ],
-  templateUrl: './contact-form.component.html',
-  styleUrl: './contact-form.component.css'
+  templateUrl: './contact-form.component.html'
 })
 export class ContactFormComponent {
   formStatus = "";

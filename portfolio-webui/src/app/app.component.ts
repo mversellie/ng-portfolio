@@ -11,8 +11,7 @@ import {AboutComponent} from "./about/about.component";
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, GithubComponent, CarouselComponent, CommonModule, NgFor, ContactFormComponent, AboutComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  templateUrl: './app.component.html'
 })
 export class AppComponent{
   @ViewChild("github") github:GithubComponent
