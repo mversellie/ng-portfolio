@@ -22,7 +22,7 @@ def after_request(response):
 def not_found_error(error):
     return handle_basic_error(404,error)
 
-@app.route('/form',methods=['POST'])
+@app.route('/api/form',methods=['POST'])
 def send_email():
     form_data = request.json
     email_address_data = parseaddr(form_data.get("email"))
