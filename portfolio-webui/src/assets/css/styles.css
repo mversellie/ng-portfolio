@@ -19,6 +19,10 @@ html {
   }
 }
 
+body{
+  color:white;
+}
+
 .divider-custom {
   margin: 1.25rem 0 1.5rem;
   width: 100%;
@@ -110,6 +114,7 @@ html {
   border-top: 0;
   border-radius: 0;
   border-width: 1px;
+  color: white;
   background-color: rgba(0,0,0,0);
 }
 .form-floating input.form-control:focus,
@@ -121,9 +126,6 @@ html {
   color: #6c757d;
 }
 
-.form-floating > label {
-  padding: 1.5rem 0;
-}
 
 .masthead {
   padding-top: calc(6rem + 74px);
@@ -205,4 +207,18 @@ html {
 
 .secondary-stripe-bg-color {
   background-color: #131516;
+}
+
+.form-floating > .form-control:focus,
+.form-floating > .form-control:not(:placeholder-shown),
+.form-floating > .form-control-plaintext:focus,
+.form-floating > .form-control-plaintext:not(:placeholder-shown) {
+  padding-top: 3.5rem;
+  padding-bottom: 2rem;
+}
+
+
+.form-floating > .form-control:focus ~ label, .form-floating > .form-control:not(:placeholder-shown) ~ label, .form-floating > .form-select ~ label {
+  opacity: .65;
+  transform: scale(.65) translateY(-.5rem) translateX(.15rem);
 }
